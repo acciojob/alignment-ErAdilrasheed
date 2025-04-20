@@ -1,91 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>HTML Assignment #3</title>
-  <style>
-    .middle {
-      border: 1px solid black;
-      width: 80%;
-      margin: 20px auto;
-      text-align: center;
-      border-collapse: collapse;
-    }
-
-    .middle th, .middle td {
-      border: 1px solid black;
-      padding: 5px;
-    }
-
-    .header {
-      text-align: center;
-    }
-
-    .green-row {
-      background-color: green;
-      height: 40px;
-    }
-
-    .blue-row {
-      background-color: blue;
-      height: 40px;
-    }
-
-    img {
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+	<title>HTML Assignment 3</title>
 </head>
 <body>
-
-  <h3 class="header">HTML Assignment #3</h3>
-
-  <!-- First Table -->
-  <table class="middle">
+	<h3 style="text-align: center;">HTML Assignment #3</h3>
+  <table id="table-1" class="middle">
     <tr>
-      <td style="text-align: left;">left</td>
-      <td style="text-align: center;">center</td>
-      <td style="text-align: right;">right</td>
+      <td>left</td>
+      <td id="t11" class="center">center</td>
+      <td id="t13" class="right">right</td>
     </tr>
     <tr>
-      <td style="text-align: left;">left</td>
-      <td style="text-align: center;">center</td>
-      <td style="text-align: right;">right</td>
+      <td>left</td>
+      <td id="t12" class="center">center</td>
+      <td id="t13" class="right">right</td>
     </tr>
     <tr>
-      <td style="text-align: left;">left</td>
-      <td style="text-align: center;">center</td>
-      <td style="text-align: right;">right</td>
+      <td>left</td>
+      <td class="center">center</td>
+      <td class="right">right</td>
     </tr>
   </table>
 
-  <!-- Second Table -->
-  <table class="middle">
+  <br />
+
+  <table id="table-2" class="middle">
     <tr>
-      <td colspan="2"></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td id="t21" colspan="6"></td>
     </tr>
   </table>
 
-  <!-- Third Table with Color Rows and Image -->
-  <table class="middle">
-    <tr class="green-row">
-      <td colspan="3"></td>
+  <br />
+
+  <table id="table-3" class="middle">
+    <tr>
+      <td style="background-color: green;"></td>
     </tr>
     <tr>
-      <td colspan="3">
-        <img src="https://plus.unsplash.com/premium_photo-1685366445883-709973744248?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Michael Jordan" width="300" />
+      <td id="t-image">
+        <img src="https://plus.unsplash.com/premium_photo-1685366445883-709973744248?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jordan Dunk" width="300">
       </td>
     </tr>
-    <tr class="blue-row">
-      <td colspan="3"></td>
+    <tr>
+      <td style="background-color: blue;"></td>
     </tr>
   </table>
 
